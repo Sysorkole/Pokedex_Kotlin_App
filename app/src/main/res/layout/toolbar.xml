@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:titleTextColor="@color/pokemon_white">
+
+    <EditText
+        android:id="@+id/edt_toolbar"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginStart="40dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:visibility="visible"/>
+
+
+</androidx.appcompat.widget.Toolbar>

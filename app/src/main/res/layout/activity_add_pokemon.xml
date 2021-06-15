@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pokemon_red"
+    android:orientation="vertical"
+    tools:context=".AddPokemon">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/numero_do_pokemon_edittext" />
+
+    <EditText
+        android:id="@+id/edt_numero_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/nome_do_pokemon_edittext" />
+
+    <EditText
+        android:id="@+id/edt_nome_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/url_da_foto_edittext" />
+
+    <EditText
+        android:id="@+id/edt_foto_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/url_do_primeiro_tipo_edittext" />
+
+    <EditText
+        android:id="@+id/edt_tipoum_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="10sp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/url_do_segundo_tipo_edittext" />
+
+    <EditText
+        android:id="@+id/edt_tipodois_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/descricao_do_pokemon_edittext" />
+
+    <EditText
+        android:id="@+id/edt_descricao_pokemon"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:textSize="10sp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btn_Criar_Pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/pokemon_white"
+        android:text="Criar"
+        android:textColor="@color/pokemon_red" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
