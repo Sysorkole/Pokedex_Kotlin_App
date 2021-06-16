@@ -23,6 +23,7 @@
         android:textSize="10sp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
+        android:fontFamily="casual"
         android:background="@android:drawable/editbox_background" />
 
     <TextView
@@ -37,23 +38,10 @@
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:textSize="10sp"
+        android:fontFamily="casual"
         android:layout_marginBottom="24dp"
         android:background="@android:drawable/editbox_background" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="@string/url_da_foto_edittext" />
-
-    <EditText
-        android:id="@+id/edt_foto_pokemon"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="16dp"
-        android:textSize="10sp"
-        android:layout_marginBottom="24dp"
-        android:background="@android:drawable/editbox_background" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,6 +55,7 @@
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
+        android:fontFamily="casual"
         android:textSize="10sp"
         android:background="@android:drawable/editbox_background" />
 
@@ -81,6 +70,7 @@
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
+        android:fontFamily="casual"
         android:textSize="10sp"
         android:layout_marginBottom="24dp"
         android:background="@android:drawable/editbox_background" />
@@ -94,19 +84,29 @@
     <EditText
         android:id="@+id/edt_descricao_pokemon"
         android:layout_width="240dp"
-        android:layout_height="120dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:textSize="10sp"
+        android:fontFamily="casual"
         android:layout_marginBottom="40dp"
         android:background="@android:drawable/editbox_background" />
 
-    <Button
-        android:id="@+id/btn_Criar_Pokemon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:backgroundTint="@color/pokemon_white"
-        android:text="Criar"
-        android:textColor="@color/pokemon_red" />
+        <Button
+            android:id="@+id/btn_Criar_Pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/pokemon_white"
+            android:text="Criar"
+            android:textColor="@color/pokemon_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Tipos:\nAço Água Dragão Elétrico Fada Fantasma Fogo\nGelo Inseto Lutador Normal Pedra Planta\nPsíquico Sombrio Terra Venenoso Voador"/>
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

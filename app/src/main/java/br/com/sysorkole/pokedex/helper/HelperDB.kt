@@ -28,7 +28,7 @@ class HelperDB(
             "$COLUMNS_NOME TEXT NOT NULL,"+
             "$COLUMNS_FOTO TEXT NOT NULL,"+
             "$COLUMNS_TIPOUM TEXT NOT NULL,"+
-            "$COLUMNS_TIPODOIS TEXT,"+
+            "$COLUMNS_TIPODOIS TEXT NOT NULL,"+
             "$COLUMNS_DESCRICAO TEXT NOT NULL,"+
             ""+
             "PRIMARY KEY($COLUMNS_NUMERO)"+ //Poderia adicionar AUTO INCREMENT Depois no NOME
@@ -85,7 +85,7 @@ class HelperDB(
                 cursor.getString(cursor.getColumnIndex(COLUMNS_FOTO)),
                 cursor.getString(cursor.getColumnIndex(COLUMNS_TIPOUM)),
                 cursor.getString(cursor.getColumnIndex(COLUMNS_TIPODOIS)),
-                cursor.getString(cursor.getColumnIndex(COLUMNS_NUMERO))
+                cursor.getString(cursor.getColumnIndex(COLUMNS_DESCRICAO))
             )
             list.add(pokemon)
         }
@@ -99,17 +99,6 @@ class HelperDB(
                 "$COLUMNS_TIPOUM, $COLUMNS_TIPODOIS, $COLUMNS_DESCRICAO) VALUES " +
                 "('${pokemon.numero}','${pokemon.nome}','${pokemon.foto}'," +
                 "'${pokemon.primeiroTipo}','${pokemon.segundoTipo}','${pokemon.descricao}')"
-        db.execSQL(sql)
-        db.close()
-    }
-
-
-    fun salvarPokemonUmTipo(pokemon: Pokemon){
-        val db = writableDatabase ?: return
-        val sql = "INSERT INTO $TABLE_NAME ($COLUMNS_NUMERO, $COLUMNS_NOME, $COLUMNS_FOTO, " +
-                "$COLUMNS_TIPOUM, $COLUMNS_DESCRICAO) VALUES " +
-                "('${pokemon.numero}','${pokemon.nome}','${pokemon.foto}'," +
-                "'${pokemon.primeiroTipo}','${pokemon.descricao}')"
         db.execSQL(sql)
         db.close()
     }
